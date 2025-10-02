@@ -19,7 +19,7 @@ except mysql.connector.Error as err:
 #     print("Dropped existing database 'ao3_library' (all tables removed)")
 # except mysql.connector.Error as err:
 #     print(f"Error dropping database: {err}")
-#     exit()
+#     exit() 
 
 # creating database
 cursor.execute("CREATE DATABASE IF NOT EXISTS ao3_library")
