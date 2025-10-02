@@ -14,6 +14,13 @@ except mysql.connector.Error as err:
     print(f"Connection error: {err}\n")
     exit()
 
+# try:
+#     cursor.execute("DROP DATABASE IF EXISTS ao3_library")
+#     print("Dropped existing database 'ao3_library' (all tables removed)")
+# except mysql.connector.Error as err:
+#     print(f"Error dropping database: {err}")
+#     exit()
+
 # creating database
 cursor.execute("CREATE DATABASE IF NOT EXISTS ao3_library")
 # sets as active schema
@@ -26,6 +33,7 @@ cursor.execute("""
         id INT AUTO_INCREMENT PRIMARY KEY,                                                          -- unique ID for each work
         title VARCHAR (255) NOT NULL,                                                               -- fic title (required)
         author VARCHAR(100) NOT NULL,                                                               -- author name (required)
+        fandom VARCHAR(255),                                                                        -- main fandom for fic
         summary TEXT,                                                                               -- fic summary
         notes TEXT,                                                                                 -- my notes
         word_count INT,                                                                             -- total words
@@ -58,6 +66,7 @@ cursor.execute("""
 
 cursor.execute("SHOW TABLES")
 tables = cursor.fetchall()
+print("tables: ")
 for table in tables:
     print(table[0])
 
