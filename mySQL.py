@@ -4,8 +4,8 @@ import mysql.connector
 try:
     db = mysql.connector.connect(
         host = 'localhost',
-        user = 'Inso',
-        password = 'AO3iSQL!',
+        user = 'user',
+        password = 'password',
     )
 
     cursor = db.cursor()
