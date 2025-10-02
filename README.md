@@ -16,3 +16,10 @@ This project is a small, interactive database of fanfiction works from Archive o
 
 ## Purpose
 This project serves as a personal organizational tool for managing fanfics I’ve read, while also providing a foundation for exploring fanfic trends and building interactive applications around literary data.
+
+## Getting Started
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/ao3-fics-database.git
+
+   
