@@ -20,6 +20,15 @@ This project serves as a personal organizational tool for managing fanfics I’v
 ## Getting Started
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/ao3-fics-database.git
+   git clone https://github.com/Inso04/MySQL.git
+   ```
+
+2. Download MySQL:
+   https://www.mysql.com/
+
+3. Install connector for MySQL:
+   ```bash
+   pip install mysql-connector-python
+   ```
 
    
