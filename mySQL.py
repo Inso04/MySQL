@@ -39,7 +39,7 @@ cursor.execute("""
         word_count INT,                                                                             -- total words
         chapters INT DEFAULT 1,                                                                     -- number of chapters
         complete BOOLEAN DEFAULT FALSE NOT NULL,                                                    -- finished or ongoing
-        published_at DATETIME,                                                                      -- when it was first published
+        published_at DATE,                                                                      -- when it was first published
         rating ENUM('General Audiences', 'Teen', 'Mature', 'Explicit') DEFAULT 'General Audiences', -- Content rating of the work
         UNIQUE (title, author)                                                                      -- Prevent author from having duplicate titles
     )
